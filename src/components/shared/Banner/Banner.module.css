@@ -1,0 +1,13 @@
+.bannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    color: var(--white);
+}
+
+.rotatingText {
+    animation: rotateMessage 10s linear infinite;
+    display: inline-block;
+}
