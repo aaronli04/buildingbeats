@@ -1,10 +1,9 @@
 const constants = {
-    // Banner Message shown
+    // Banner message shown
     BANNER_MESSAGE: {
         message: 'New Course: Metro Boomin',
         link: 'https://skool.com/buildingbeats/metro'
     },
-
 
     // Categories structure
     CATEGORIES_STRUCTURE: [
@@ -70,6 +69,18 @@ const constants = {
                     title: 'Pop Smoke',
                     link: '/artists/popsmoke'
                 }
+            ]
+        }
+    ],
+
+    // Filters shown
+    FILTERS_STRUCTURE: [
+        {
+            title: 'Level',
+            options: [
+                'Beginner',
+                'Intermediate',
+                'Advanced'
             ]
         }
     ]
