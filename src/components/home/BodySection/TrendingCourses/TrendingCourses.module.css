@@ -1,0 +1,13 @@
+.liner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.courseSection {
+    width: 900px;
+}

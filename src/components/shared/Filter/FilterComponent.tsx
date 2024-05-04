@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
-import styles from './FilterComponent.module.css';
-import { Filter } from '@/utils/types/Filter';
-import { Roboto } from "next/font/google";
+'use client'
+
+import React, { useState } from 'react'
+import styles from './FilterComponent.module.css'
+import { Filter } from '@/utils/types/Filter'
+import { Roboto } from "next/font/google"
 
 interface FilterProps {
     filters: Filter[];
+}
+
+interface CheckboxState {
+    [key: string]: boolean;
 }
 
 const robotoBold = Roboto({
@@ -13,6 +19,24 @@ const robotoBold = Roboto({
 })
 
 const FilterComponent: React.FC<FilterProps> = ({ filters }) => {
+    const [checkedState, setCheckedState] = useState(() => {
+        const initialState: CheckboxState = {}
+        filters.forEach((filter) => {
+            filter.options.forEach((option) => {
+                const key = `${filter.title}:${option}`
+                initialState[key] = false
+            })
+        })
+        return initialState
+    })
+
+    const handleCheckboxChange = (key: string) => {
+        setCheckedState(prevState => ({
+            ...prevState,
+            [key]: !prevState[key]
+        }))
+    }
+
     return (
         <div className={styles.liner}>
             <div className={robotoBold.className}>
@@ -31,7 +55,13 @@ const FilterComponent: React.FC<FilterProps> = ({ filters }) => {
                         {filter.options && filter.options.length > 0 && (
                             filter.options.map((option, subIndex) => (
                                 <div key={subIndex} className={styles.option} >
-                                    <input className={styles.checkbox} type="checkbox" id={option} name={option} />
+                                    <input
+                                        className={styles.checkbox}
+                                        type="checkbox" id={option}
+                                        name={option}
+                                        checked={checkedState[option]}
+                                        onChange={() => handleCheckboxChange(option)}
+                                    />
                                     <span>
                                         {option}
                                     </span>
@@ -42,7 +72,7 @@ const FilterComponent: React.FC<FilterProps> = ({ filters }) => {
                 </div>
             ))}
         </div>
-    );
+    )
 }
 
 export default FilterComponent;

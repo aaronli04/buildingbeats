@@ -1,8 +1,37 @@
+const baseConstants = {
+    // Skool page link
+    SKOOL_LINK: 'skool.com/buildingbeats',
+}
+
+const courses = {
+    // Bank of all courses
+    ALL_COURSES: [
+        {
+            title: 'Introduction to Mixing',
+            difficulty: 'Beginner',
+            description: 'Start at the beginning by learning mixing basics \u2014 the foundation of beat making.',
+            link: baseConstants.SKOOL_LINK + '/courses/intro-to-mixing'
+        },
+        {
+            title: 'Drill Beats 101',
+            difficulty: 'Intermediate',
+            description: 'Learn drill and start to make your own drill beats. Figure out how to embed energy in beats.',
+            link: baseConstants.SKOOL_LINK + '/courses/drill101'
+        },
+        {
+            title: 'A Guide to Pop Smoke',
+            difficulty: 'Advanced',
+            description: 'Learn more about drill, figure out to make Pop Smoke-beats, and try out our kit.',
+            link: baseConstants.SKOOL_LINK + '/courses/guide-to-pop-smoke'
+        },
+    ],
+}
+
 const constants = {
     // Banner message shown
     BANNER_MESSAGE: {
         message: 'New Course: Metro Boomin',
-        link: 'https://skool.com/buildingbeats/metro'
+        link: baseConstants.SKOOL_LINK + '/metro'
     },
 
     // Categories structure
@@ -83,6 +112,13 @@ const constants = {
                 'Advanced'
             ]
         }
+    ],
+
+    // Trending courses
+    TRENDING_COURSES: [
+        courses.ALL_COURSES[0],
+        courses.ALL_COURSES[1],
+        courses.ALL_COURSES[2]
     ]
 }
 
