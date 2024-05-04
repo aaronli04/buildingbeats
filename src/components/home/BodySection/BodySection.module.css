@@ -1,0 +1,6 @@
+.liner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+}

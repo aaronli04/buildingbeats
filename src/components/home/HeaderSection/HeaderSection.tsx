@@ -1,15 +1,14 @@
-import Banner from '@/components/shared/Banner/Banner'
+import BannerComponent from '@/components/shared/Banner/BannerComponent'
+import { Banner } from '@/utils/types/Banner'
 import styles from './HeaderSection.module.css'
+import constants from '@/utils/constants'
 
 const HeaderSection = () => {
-    const currentBanner: Banner = {
-        message: 'New Course: Metro Boomin',
-        link: 'https://skool.com/buildingbeats/metro'
-    }
+    const currentBanner: Banner = constants.BANNER_MESSAGE
 
     return (
         <div className={styles.liner}>
-            <Banner {...currentBanner}/>
+            <BannerComponent banner={currentBanner}/>
         </div>
     )
 }

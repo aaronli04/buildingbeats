@@ -8,7 +8,7 @@ const SearchSection = () => {
     return (
         <div className={styles.liner}>
             <div className={styles.logoSection}>
-                <Image src={logo} alt='Building Beats logo' loading="eager" width={452} />
+                <Image src={logo} alt='Building Beats Logo' loading="eager" width={452} />
             </div>
             <div className={styles.searchbarSection}>
                 <input className={styles.searchbar} />

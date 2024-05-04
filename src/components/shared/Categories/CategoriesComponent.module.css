@@ -1,0 +1,22 @@
+.liner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.categorySection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category {
+    font-size: 22px;
+}
+
+.subCategory {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 5px;
+}
