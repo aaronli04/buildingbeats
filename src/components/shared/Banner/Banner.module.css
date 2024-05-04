@@ -1,13 +1,28 @@
-.bannerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    color: var(--white);
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
 }
 
-.rotatingText {
-    animation: rotateMessage 10s linear infinite;
+.bannerContainer {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.bannerMessage {
+    color: var(--white);
+    margin-right: 30px;
+}
+
+.slidingText {
+    animation: 40s slide infinite linear;
     display: inline-block;
 }
