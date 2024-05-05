@@ -1,6 +1,7 @@
 import { Course } from '@/utils/types/Course'
 import styles from './TrendingCourses.module.css'
 import { Roboto } from "next/font/google"
+import CourseCard from '@/components/shared/CourseCard/CourseCard'
 
 const robotoBold = Roboto({
     weight: '500',
@@ -11,7 +12,7 @@ interface TrendingCoursesProps {
     courses: Course[];
 }
 
-const TrendingCourses: React.FC<TrendingCoursesProps> = () => {
+const TrendingCourses: React.FC<TrendingCoursesProps> = ({ courses }) => {
     return (
         <div className={styles.liner}>
             <div className={robotoBold.className}>
@@ -20,7 +21,9 @@ const TrendingCourses: React.FC<TrendingCoursesProps> = () => {
                 </div>
             </div>
             <div className={styles.courseSection}>
-                Courses
+                {courses.map((course, index) => (
+                    <CourseCard key={index} course={course} />
+                ))}
             </div>
         </div>
     )
