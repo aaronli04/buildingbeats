@@ -17,7 +17,7 @@ const TrendingCourses: React.FC<TrendingCoursesProps> = ({ courses }) => {
         <div className={styles.liner}>
             <div className={robotoBold.className}>
                 <div className={styles.title}>
-                    Trending Courses
+                    Trending courses
                 </div>
             </div>
             <div className={styles.courseSection}>

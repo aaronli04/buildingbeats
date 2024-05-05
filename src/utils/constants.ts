@@ -24,6 +24,24 @@ const courses = {
             description: 'Learn more about drill, figure out to make Pop Smoke-beats, and try out our kit.',
             link: baseConstants.SKOOL_LINK + '/courses/guide-to-pop-smoke'
         },
+        {
+            title: 'Introduction to DJing',
+            difficulty: 'beginner',
+            description: 'Start at the beginning by learning DJIng basics and become Fred Again.',
+            link: baseConstants.SKOOL_LINK + '/courses/intro-to-djing'
+        },
+        {
+            title: 'A Guide to Juice WRLD',
+            difficulty: 'advanced',
+            description: 'Master Juice WRLD-style beats and elements of his iconic emo-rap and trap sound.',
+            link: baseConstants.SKOOL_LINK + '/courses/guide-to-juice-wrld'
+        },
+        {
+            title: 'Introduction to Soundtrap',
+            difficulty: 'beginner',
+            description: 'Learn to create music using Soundtrap with hands-on lessons and practical tips.',
+            link: baseConstants.SKOOL_LINK + '/courses/intro-to-soundtrap'
+        },
     ],
 }
 
@@ -122,4 +140,7 @@ const constants = {
     ]
 }
 
-export default constants
+export default {
+    constants: constants,
+    courses: courses
+}
