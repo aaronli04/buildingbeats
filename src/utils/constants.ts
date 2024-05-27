@@ -8,37 +8,37 @@ const courses = {
     ALL_COURSES: [
         {
             title: 'Introduction to Mixing',
-            difficulty: 'beginner',
+            difficulty: 'Beginner',
             description: 'Start at the beginning by learning mixing basics \u2014 the foundation of beat making.',
             link: baseConstants.SKOOL_LINK + '/courses/intro-to-mixing'
         },
         {
             title: 'Drill Beats 101',
-            difficulty: 'intermediate',
+            difficulty: 'Intermediate',
             description: 'Learn drill and start to make your own drill beats. Figure out how to embed energy in beats.',
             link: baseConstants.SKOOL_LINK + '/courses/drill101'
         },
         {
             title: 'A Guide to Pop Smoke',
-            difficulty: 'advanced',
+            difficulty: 'Advanced',
             description: 'Learn more about drill, figure out to make Pop Smoke-beats, and try out our kit.',
             link: baseConstants.SKOOL_LINK + '/courses/guide-to-pop-smoke'
         },
         {
             title: 'Introduction to DJing',
-            difficulty: 'beginner',
+            difficulty: 'Beginner',
             description: 'Start at the beginning by learning DJIng basics and become Fred Again.',
             link: baseConstants.SKOOL_LINK + '/courses/intro-to-djing'
         },
         {
             title: 'A Guide to Juice WRLD',
-            difficulty: 'advanced',
+            difficulty: 'Advanced',
             description: 'Master Juice WRLD-style beats and elements of his iconic emo-rap and trap sound.',
             link: baseConstants.SKOOL_LINK + '/courses/guide-to-juice-wrld'
         },
         {
             title: 'Introduction to Soundtrap',
-            difficulty: 'beginner',
+            difficulty: 'Beginner',
             description: 'Learn to create music using Soundtrap with hands-on lessons and practical tips.',
             link: baseConstants.SKOOL_LINK + '/courses/intro-to-soundtrap'
         },

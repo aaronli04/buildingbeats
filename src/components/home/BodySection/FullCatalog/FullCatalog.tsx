@@ -2,19 +2,27 @@ import { Course } from '@/utils/types/Course'
 import styles from './FullCatalog.module.css'
 import { Roboto } from "next/font/google"
 import CourseCard from '@/components/shared/CourseCard/CourseCard'
-import { shuffleCatalog } from '@/utils/catalog'
 
 const robotoBold = Roboto({
     weight: '500',
     subsets: ["latin"]
 })
 
-interface FullCatalogProps {
-    courses: Course[];
+interface CheckboxState {
+    [key: string]: boolean;
 }
 
-const FullCatalog: React.FC<FullCatalogProps> = ({ courses }) => {
-    const randomizedCatalog = shuffleCatalog(courses)
+interface FullCatalogProps {
+    courses: Course[];
+    filtersState: CheckboxState;
+}
+
+const FullCatalog: React.FC<FullCatalogProps> = ({ courses, filtersState }) => {
+    const isAnyFilterActive = Object.values(filtersState).some(value => value)
+
+    const filteredCourses = isAnyFilterActive 
+    ? courses.filter(course => filtersState['Level:' + course.difficulty] === true)
+    : courses
 
     return (
         <div className={styles.liner}>
@@ -25,11 +33,11 @@ const FullCatalog: React.FC<FullCatalogProps> = ({ courses }) => {
                     </div>
                 </div>
                 <div className={styles.results}>
-                    {randomizedCatalog.length} results
+                    {filteredCourses.length} results
                 </div>
             </div>
             <div className={styles.courseSection}>
-                {randomizedCatalog.map((course, index) => (
+                {filteredCourses.map((course, index) => (
                     <CourseCard key={index} course={course} />
                 ))}
             </div>

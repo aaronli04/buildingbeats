@@ -7,10 +7,7 @@ import { Roboto } from "next/font/google"
 
 interface FilterProps {
     filters: Filter[];
-}
-
-interface CheckboxState {
-    [key: string]: boolean;
+    onCheckboxChange: (checkboxState: any) => void;
 }
 
 const robotoBold = Roboto({
@@ -18,24 +15,7 @@ const robotoBold = Roboto({
     subsets: ["latin"]
 })
 
-const FilterComponent: React.FC<FilterProps> = ({ filters }) => {
-    const [checkedState, setCheckedState] = useState(() => {
-        const initialState: CheckboxState = {}
-        filters.forEach((filter) => {
-            filter.options.forEach((option) => {
-                const key = `${filter.title}:${option}`
-                initialState[key] = false
-            })
-        })
-        return initialState
-    })
-
-    const handleCheckboxChange = (key: string) => {
-        setCheckedState(prevState => ({
-            ...prevState,
-            [key]: !prevState[key]
-        }))
-    }
+const FilterComponent: React.FC<FilterProps> = ({ filters, onCheckboxChange }) => {
 
     return (
         <div className={styles.liner}>
@@ -59,8 +39,7 @@ const FilterComponent: React.FC<FilterProps> = ({ filters }) => {
                                         className={styles.checkbox}
                                         type="checkbox" id={option}
                                         name={option}
-                                        checked={checkedState[option]}
-                                        onChange={() => handleCheckboxChange(option)}
+                                        onChange={() => onCheckboxChange(`${filter.title}:${option}`)}
                                     />
                                     <span>
                                         {option}
