@@ -20,9 +20,9 @@ interface FullCatalogProps {
 const FullCatalog: React.FC<FullCatalogProps> = ({ courses, filtersState }) => {
     const isAnyFilterActive = Object.values(filtersState).some(value => value)
 
-    const filteredCourses = isAnyFilterActive 
-    ? courses.filter(course => filtersState['Level:' + course.difficulty] === true)
-    : courses
+    const filteredCourses = isAnyFilterActive
+        ? courses.filter(course => filtersState['Level:' + course.difficulty] === true)
+        : courses
 
     return (
         <div className={styles.liner}>
@@ -33,7 +33,9 @@ const FullCatalog: React.FC<FullCatalogProps> = ({ courses, filtersState }) => {
                     </div>
                 </div>
                 <div className={styles.results}>
-                    {filteredCourses.length} results
+                    {filteredCourses.length === 0 ? 'No results' :
+                        filteredCourses.length === 1 ? '1 result' :
+                            `${filteredCourses.length} results`}
                 </div>
             </div>
             <div className={styles.courseSection}>
