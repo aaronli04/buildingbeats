@@ -12,7 +12,11 @@ interface CheckboxState {
     [key: string]: boolean;
 }
 
-const BodySection = () => {
+interface Props {
+    searchText: string
+}
+
+const BodySection:React.FC<Props> = ({ searchText }) => {
 
     const [checkedState, setCheckedState] = useState(() => {
         const initialState: CheckboxState = {}
@@ -40,7 +44,7 @@ const BodySection = () => {
             </div>
             <div className={styles.body}>
                 <TrendingCourses courses={data.constants.TRENDING_COURSES} />
-                <FullCatalog courses={data.courses.ALL_COURSES} filtersState={checkedState}/>
+                <FullCatalog searchText={searchText} courses={data.courses.ALL_COURSES} filtersState={checkedState}/>
             </div>
         </div>
     )
