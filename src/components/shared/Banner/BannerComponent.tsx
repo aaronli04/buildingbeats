@@ -14,14 +14,14 @@ const BannerComponent: React.FC<BannerProps> = ({ banner }) => {
         <div className={styles.bannerContainer}>
             <div className={styles.slidingText}>
                 {messages.map((msg, index) => (
-                    <Link className={styles.bannerMessage} key={index} href={banner.link}>
+                    <Link target="_blank" className={styles.bannerMessage} key={index} href={banner.link}>
                         {msg}
                     </Link>
                 ))}
             </div>
             <div className={styles.slidingText}>
                 {messages.map((msg, index) => (
-                    <Link className={styles.bannerMessage} key={index} href={banner.link}>
+                    <Link target="_blank" className={styles.bannerMessage} key={index} href={banner.link}>
                         {msg}
                     </Link>
                 ))}

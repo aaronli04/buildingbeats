@@ -19,14 +19,14 @@ const CategoriesComponent: React.FC<CategoriesProps> = ({ categories }) => {
             {categories.map((category, index) => (
                 <div key={index} className={styles.categorySection}>
                     <div className={robotoBold.className}>
-                        <Link className={styles.category} href={category.main.link}>
+                        <div className={styles.category}>
                             {category.main.title}
-                        </Link>
+                        </div>
                     </div>
                     <div className={styles.subCategory}>
                         {category.subcategories && category.subcategories.length > 0 && (
                             category.subcategories.map((subcategory, subIndex) => (
-                                <Link key={subIndex} href={subcategory.link}>
+                                <Link target="_blank" key={subIndex} href={subcategory.link}>
                                     {subcategory.title}
                                 </Link>
                             ))

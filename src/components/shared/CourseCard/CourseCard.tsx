@@ -42,7 +42,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
     const difficultySubtext = getDifficultySubtext(difficulty)
 
     return (
-        <Link className={styles.liner} href={course.link}>
+        <Link target="_blank" className={styles.liner} href={course.link}>
             <div className={difficultyClass}>
                 <div className={styles.difficultyTab}>
                     <span className={robotoBold.className}>

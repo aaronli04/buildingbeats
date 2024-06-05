@@ -62,15 +62,15 @@ const constants = {
             subcategories: [
                 {
                     title: 'Mixing',
-                    link: '/essentials/mixing'
+                    link: 'https://buildingbeats.org/complete-guide-to-mixing'
                 },
                 {
                     title: 'DJing',
-                    link: '/essentials/dj'
+                    link: 'https://buildingbeats.org/how-to-dj'
                 },
                 {
                     title: 'Soundtrap',
-                    link: '/essentials/soundtrap'
+                    link: 'https://buildingbeats.org/learn-soundtrap'
                 }
             ]
         },
@@ -82,19 +82,19 @@ const constants = {
             subcategories: [
                 {
                     title: 'Lofi',
-                    link: '/styles/lofi'
+                    link: 'https://buildingbeats.org/lo-fi'
                 },
                 {
                     title: 'Ballroom',
-                    link: '/styles/ballroom'
+                    link: 'https://buildingbeats.org/ballroom'
                 },
                 {
                     title: 'Drill',
-                    link: '/styles/drill'
+                    link: 'https://buildingbeats.org/complete-guide-to-drill'
                 },
                 {
                     title: 'K-Pop',
-                    link: '/styles/kpop'
+                    link: 'https://buildingbeats.org/k-pop'
                 }
             ]
         },
@@ -106,15 +106,15 @@ const constants = {
             subcategories: [
                 {
                     title: 'Juice WRLD',
-                    link: '/artists/juicewrld'
+                    link: 'https://buildingbeats.org/juice-wrld'
                 },
                 {
                     title: 'Lil Nas X',
-                    link: '/artists/lilnasx'
+                    link: 'https://buildingbeats.org/lil-nas-x'
                 },
                 {
                     title: 'Pop Smoke',
-                    link: '/artists/popsmoke'
+                    link: 'https://buildingbeats.org/pop-smoke'
                 }
             ]
         }
