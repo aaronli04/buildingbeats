@@ -17,3 +17,38 @@
   justify-content: flex-start;
   gap: 35px;
 }
+
+@media (max-width: 64em) {
+  .body {
+    max-width: 85vw;
+  }
+
+  .courseSection {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 55em) {
+  .body {
+    max-width: 80vw;
+  }
+
+  .courseSection {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 27em) {
+  .liner {
+    width: 85vw;
+    align-items: center;
+  }
+
+  .courseSection {
+    width: 85vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
