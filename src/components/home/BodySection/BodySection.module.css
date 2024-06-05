@@ -19,12 +19,10 @@
 }
 
 @media (max-width: 64em) {
-
   .body {
     flex-wrap: wrap;
     max-width: 70vw;
   }
-
 }
 
 @media (max-width: 55em) {
@@ -47,7 +45,7 @@
   }
 
   .sidebar {
-    display: none
+    display: none;
   }
 
   .body {

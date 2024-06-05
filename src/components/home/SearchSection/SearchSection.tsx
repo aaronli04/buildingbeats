@@ -15,15 +15,15 @@ const SearchSection: React.FC<Props> = ({ setSearchText }) => {
 
   return (
     <div className={styles.liner}>
-        <Link className={styles.logoSection} href="/">
-          <Image
-            src={logo}
-            alt="Building Beats Logo"
-            loading="eager"
-            width={452}
-            layout="responsive"
-          />
-        </Link>
+      <Link className={styles.logoSection} href="/">
+        <Image
+          src={logo}
+          alt="Building Beats Logo"
+          loading="eager"
+          width={452}
+          layout="responsive"
+        />
+      </Link>
       <div className={styles.searchbarSection}>
         <input className={styles.searchbar} onChange={handleInputChange} />
         <IoSearch className={styles.searchIcon} />
