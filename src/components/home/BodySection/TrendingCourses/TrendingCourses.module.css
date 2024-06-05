@@ -1,19 +1,19 @@
 .liner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
 }
 
 .title {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .courseSection {
-    width: 900px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: flex-start;
-    gap: 35px;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;
+  gap: 35px;
 }

@@ -1,19 +1,19 @@
 .liner {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0px 60px 30px 60px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 60px 30px 60px;
+  justify-content: space-between;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }

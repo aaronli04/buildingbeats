@@ -1,6 +1,6 @@
 export interface Course {
-    title: string,
-    difficulty: string,
-    description: string,
-    link: string
+  title: string;
+  difficulty: string;
+  description: string;
+  link: string;
 }

@@ -1,9 +1,9 @@
 .liner {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 37px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
 }

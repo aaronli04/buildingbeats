@@ -1,4 +1,4 @@
 export interface Filter {
-    title: string,
-    options: string[]
+  title: string;
+  options: string[];
 }

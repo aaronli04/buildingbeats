@@ -1,57 +1,56 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import styles from './FilterComponent.module.css'
-import { Filter } from '@/utils/types/Filter'
-import { Roboto } from "next/font/google"
+import React, { useState } from "react";
+import styles from "./FilterComponent.module.css";
+import { Filter } from "@/utils/types/Filter";
+import { Roboto } from "next/font/google";
 
 interface FilterProps {
-    filters: Filter[];
-    onCheckboxChange: (checkboxState: any) => void;
+  filters: Filter[];
+  onCheckboxChange: (checkboxState: any) => void;
 }
 
 const robotoBold = Roboto({
-    weight: '500',
-    subsets: ["latin"]
-})
+  weight: "500",
+  subsets: ["latin"],
+});
 
-const FilterComponent: React.FC<FilterProps> = ({ filters, onCheckboxChange }) => {
-
-    return (
-        <div className={styles.liner}>
-            <div className={robotoBold.className}>
-                <div className={styles.title}>
-                    Filters
+const FilterComponent: React.FC<FilterProps> = ({
+  filters,
+  onCheckboxChange,
+}) => {
+  return (
+    <div className={styles.liner}>
+      <div className={robotoBold.className}>
+        <div className={styles.title}>Filters</div>
+      </div>
+      {filters.map((filter, index) => (
+        <div key={index} className={styles.filterSection}>
+          <div className={robotoBold.className}>
+            <div className={styles.filterTitle}>{filter.title}</div>
+          </div>
+          <div className={styles.optionSection}>
+            {filter.options &&
+              filter.options.length > 0 &&
+              filter.options.map((option, subIndex) => (
+                <div key={subIndex} className={styles.option}>
+                  <input
+                    className={styles.checkbox}
+                    type="checkbox"
+                    id={option}
+                    name={option}
+                    onChange={() =>
+                      onCheckboxChange(`${filter.title}:${option}`)
+                    }
+                  />
+                  <span>{option}</span>
                 </div>
-            </div>
-            {filters.map((filter, index) => (
-                <div key={index} className={styles.filterSection}>
-                    <div className={robotoBold.className}>
-                        <div className={styles.filterTitle}>
-                            {filter.title}
-                        </div>
-                    </div>
-                    <div className={styles.optionSection}>
-                        {filter.options && filter.options.length > 0 && (
-                            filter.options.map((option, subIndex) => (
-                                <div key={subIndex} className={styles.option} >
-                                    <input
-                                        className={styles.checkbox}
-                                        type="checkbox" id={option}
-                                        name={option}
-                                        onChange={() => onCheckboxChange(`${filter.title}:${option}`)}
-                                    />
-                                    <span>
-                                        {option}
-                                    </span>
-                                </div>
-                            ))
-                        )}
-                    </div>
-                </div>
-            ))}
+              ))}
+          </div>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
 export default FilterComponent;

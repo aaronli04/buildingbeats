@@ -1,12 +1,8 @@
 // app/providers.tsx
-'use client'
-import '@mantine/core/styles.css';
-import { MantineProvider } from '@mantine/core';
+"use client";
+import "@mantine/core/styles.css";
+import { MantineProvider } from "@mantine/core";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  return (
-    <MantineProvider>
-        {children}
-    </MantineProvider>
-  )
+  return <MantineProvider>{children}</MantineProvider>;
 }

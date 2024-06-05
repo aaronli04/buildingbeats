@@ -1,4 +1,4 @@
 export interface Banner {
-    message: string,
-    link: string
+  message: string;
+  link: string;
 }

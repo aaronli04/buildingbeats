@@ -1,28 +1,28 @@
 @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .bannerContainer {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    height: 100px;
-    width: 100%;
-    position: relative;
-    align-items: center;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  align-items: center;
 }
 
 .bannerMessage {
-    color: var(--white);
-    margin-right: 30px;
+  color: var(--white);
+  margin-right: 30px;
 }
 
 .slidingText {
-    animation: 40s slide infinite linear;
-    display: inline-block;
+  animation: 40s slide infinite linear;
+  display: inline-block;
 }

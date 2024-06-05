@@ -1,43 +1,43 @@
 .liner {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .title {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 .filterSection {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .filterTitle {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .optionSection {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 15px;
 }
 
 .option {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 18px;
 }
 
 .checkbox {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .checkbox:checked {
-    accent-color: var(--black);
+  accent-color: var(--black);
 }
