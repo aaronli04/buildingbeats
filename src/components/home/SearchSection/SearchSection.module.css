@@ -5,6 +5,7 @@
   width: 95vw;
   padding: 20px 20px 30px 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .searchbarSection {
@@ -25,4 +26,41 @@
   height: 40px;
   width: 90%;
   font-size: 20px;
+}
+
+.searchIcon {
+  font-size: 34px;
+}
+
+.logoSection {
+  max-width: 350px;
+}
+
+@media (max-width: 64em) {
+
+  .searchbarSection {
+    width: 450px;
+  }
+
+}
+
+@media (max-width: 55em) {
+
+  .logoSection {
+    width: 300px;
+  }
+
+  .searchbarSection {
+    width: 350px;
+  }
+}
+
+@media (max-width: 27em) {
+  .logoSection {
+    width: 320px;
+  }
+
+  .searchbarSection {
+    width: 500px;
+  }
 }
