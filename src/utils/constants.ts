@@ -17,21 +17,21 @@ const courses = {
       title: "Drill Beats 101",
       difficulty: "Intermediate",
       description:
-        "Learn drill and start to make your own drill beats. Figure out how to embed energy in beats.",
+        "Dive into the world of drill and craft energetic beats that stand out.",
       link: baseConstants.SKOOL_LINK + "/courses/drill101",
     },
     {
       title: "A Guide to Pop Smoke",
       difficulty: "Advanced",
       description:
-        "Learn more about drill, figure out to make Pop Smoke-beats, and try out our kit.",
+        "Delve deep into drill, mastering Pop Smoke-style beats with our exclusive kit.",
       link: baseConstants.SKOOL_LINK + "/courses/guide-to-pop-smoke",
     },
     {
       title: "Introduction to DJing",
       difficulty: "Beginner",
       description:
-        "Start at the beginning by learning DJIng basics and become Fred Again.",
+        "Learn DJing from scratch and start mixing tracks like a pro.",
       link: baseConstants.SKOOL_LINK + "/courses/intro-to-djing",
     },
     {
@@ -45,7 +45,7 @@ const courses = {
       title: "Introduction to Soundtrap",
       difficulty: "Beginner",
       description:
-        "Learn to create music using Soundtrap with hands-on lessons and practical tips.",
+        "Create music with Soundtrap through engaging lessons and practical tips.",
       link: baseConstants.SKOOL_LINK + "/courses/intro-to-soundtrap",
     },
   ],
@@ -54,8 +54,8 @@ const courses = {
 const constants = {
   // Banner message shown
   BANNER_MESSAGE: {
-    message: "New Course: Metro Boomin",
-    link: baseConstants.SKOOL_LINK + "/metro",
+    message: "New Drop: Migos MIDI Files",
+    link: "https://buildingbeats.org/migos-bad-and-boujee-midi",
   },
 
   // Categories structure
