@@ -7,46 +7,46 @@ const courses = {
   // Bank of all courses
   ALL_COURSES: [
     {
-      title: "Introduction to Mixing",
-      difficulty: "Beginner",
-      description:
-        "Start at the beginning by learning mixing basics \u2014 the foundation of beat making.",
-      link: baseConstants.SKOOL_LINK + "/courses/intro-to-mixing",
-    },
-    {
       title: "Drill Beats 101",
       difficulty: "Intermediate",
       description:
         "Dive into the world of drill and craft energetic beats that stand out.",
-      link: baseConstants.SKOOL_LINK + "/courses/drill101",
+      link: "https://buildingbeats.org/complete-guide-to-drill",
     },
     {
       title: "A Guide to Pop Smoke",
       difficulty: "Advanced",
       description:
         "Delve deep into drill, mastering Pop Smoke-style beats with our exclusive kit.",
-      link: baseConstants.SKOOL_LINK + "/courses/guide-to-pop-smoke",
+      link: "https://buildingbeats.org/pop-smoke",
     },
     {
       title: "Introduction to DJing",
       difficulty: "Beginner",
       description:
         "Learn DJing from scratch and start mixing tracks like a pro.",
-      link: baseConstants.SKOOL_LINK + "/courses/intro-to-djing",
+      link: "https://buildingbeats.org/complete-guide-to-djing",
     },
     {
       title: "A Guide to Juice WRLD",
       difficulty: "Advanced",
       description:
         "Master Juice WRLD-style beats and elements of his iconic emo-rap and trap sound.",
-      link: baseConstants.SKOOL_LINK + "/courses/guide-to-juice-wrld",
+      link: "https://buildingbeats.org/juice-wrld",
     },
     {
       title: "Introduction to Soundtrap",
       difficulty: "Beginner",
       description:
         "Create music with Soundtrap through engaging lessons and practical tips.",
-      link: baseConstants.SKOOL_LINK + "/courses/intro-to-soundtrap",
+      link: "https://buildingbeats.org/learn-soundtrap",
+    },
+    {
+      title: "Introduction to Mixing",
+      difficulty: "Beginner",
+      description:
+        "Start at the beginning by learning mixing basics \u2014 the foundation of beat making.",
+      link: "https://buildingbeats.org/complete-guide-to-mixing",
     },
   ],
 };
