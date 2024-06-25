@@ -1,6 +1,6 @@
 const baseConstants = {
   // Skool page link
-  SKOOL_LINK: "https://skool.com/buildingbeats",
+  SKOOL_LINK: "https://skool.com/",
 };
 
 const courses = {
